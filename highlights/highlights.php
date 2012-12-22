@@ -8,7 +8,7 @@ Author URI: http://shaosidea.com/
 Version: 1.0
 
 
-    Post Highlights is released under the GNU General Public License (GPL)
+    Highlights is released under the GNU General Public License (GPL)
     http://www.gnu.org/licenses/gpl.txt
 
     
