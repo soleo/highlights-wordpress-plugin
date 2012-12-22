@@ -1,0 +1,49 @@
+.highlights{
+    border: black 1px dashed;
+    padding: 10px 10px 10px 10px;
+}
+.highlights h3{
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+
+.highlight_content{
+    font-size: 12px;
+}
+.highlight .tweet-button{
+    display: inline-block;
+}
+.highlight .facebook-button{
+    display: inline-block;
+}
+.highlight .tweet-button a{
+    display: inline-block;
+    padding: 2px 5px 2px 5px;
+    background: url('../img/twitter_counter.png') 1px center no-repeat;
+    border: 0;
+    color: #000000;
+    /* display: inline-block; */
+    cursor: pointer;
+    height: 22px;                        /* be sure to set height & width */
+    width:  60px;
+    white-space: nowrap; 
+    text-decoration: none;
+    text-indent: -9999em;
+    color: #fff;
+}
+.highlight .facebook-button a{
+    display: inline-block;
+    padding: 2px 5px 2px 5px;
+    background: url('../img/facebook_counter.png') 1px center no-repeat;
+    border: 0;
+    color: #000000;
+    /* display: inline-block; */
+    cursor: pointer;
+    height: 22px;                        /* be sure to set height & width */
+    width:  60px;
+    white-space: nowrap; 
+    text-decoration: none;
+    text-indent: -9999em;
+    color: #fff;
+
+}
