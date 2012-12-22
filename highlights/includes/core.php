@@ -56,7 +56,7 @@ function xj_print_highlights_widget($highlights = array()){
     $sharelink = get_permalink( get_the_ID() );
     
     foreach($highlights as $highlight){
-        echo "<div class='highlight'><div class='highlight_content'>".$highlight[0].'</div>';
+        echo "<div class='highlight'><div>".$highlight[0].'</div>';
         echo '<div class="tweet-button"><a href="//twitter.com/share?url='.urlencode($sharelink).'&text='.urlencode($highlight[0]).'" target="_blank">Tweet</a></div>';
         echo '<div class="facebook-button"><a href="//www.facebook.com/sharer/sharer.php?u='.urlencode($sharelink).'&t='.urlencode($highlight[0]).'" target="_blank">Facebook Share</a></div>';
         echo "</div>";
