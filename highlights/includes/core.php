@@ -27,7 +27,7 @@ $highligts_metabox = redrokk_metabox_class::getInstance('highligts_metabox', arr
 		)
 	));
 
-function show_highlights(){
+function show_highlights($option = 'default'){
     
 
     $highlight1 = get_post_meta( get_the_ID(), 'highlight-1');
@@ -41,9 +41,29 @@ function show_highlights(){
     
     $highlights = compact('highlight1', 'highlight2', 'highligh3');
     //print_r($highlights);
-    xj_print_highlights($highlights);
+    if('default' == $option){
+        xj_print_highlights($highlights);
+    }elseif ('widget' == $option){
+        xj_print_highlights_widget($highlights);
+    }
+    
 }	
 
+function xj_print_highlights_widget($highlights = array()){
+    if(empty($highlights)){
+        return ;
+    }
+    $sharelink = get_permalink( get_the_ID() );
+    
+    foreach($highlights as $highlight){
+        echo "<div class='highlight'><div class='highlight_content'>".$highlight[0].'</div>';
+        echo '<div class="tweet-button"><a href="//twitter.com/share?url='.urlencode($sharelink).'&text='.urlencode($highlight[0]).'" target="_blank">Tweet</a></div>';
+        echo '<div class="facebook-button"><a href="//www.facebook.com/sharer/sharer.php?u='.urlencode($sharelink).'&t='.urlencode($highlight[0]).'" target="_blank">Facebook Share</a></div>';
+        echo "</div>";
+        
+    }
+    
+}
 function xj_print_highlights($highlights = array()){
     if(empty($highlights)){
         return ;
@@ -60,6 +80,8 @@ function xj_print_highlights($highlights = array()){
     echo "</div>";
     
 }
+
+
 
 function xj_print_highlights_style() {
 	wp_enqueue_style( 'highlights-style', XJ_HIGHLIGHTS_URL.'assets/css/style.css', false ); 
