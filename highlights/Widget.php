@@ -31,7 +31,7 @@ class Hightlights_Widget extends WP_Widget {
 		if ( ! empty( $title ) )
 			echo $before_title . $title . $after_title;
 		//echo __( 'Hello, World!', 'text_domain' );
-		show_highlights('widget');
+		xj_the_highlights('widget');
 		echo $after_widget;
 	}
 
