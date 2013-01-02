@@ -9,9 +9,9 @@ class Hightlights_Widget extends WP_Widget {
 	 */
 	public function __construct() {
 		parent::__construct(
-	 		'Hightlights_Widget', // Base ID
-			'Hightlights_Widget', // Name
-			array( 'description' => __( 'A Hightlight Widget', 'text_domain' ), ) // Args
+	 		'Highlights_Widget', // Base ID
+			'Highlights_Widget', // Name
+			array( 'description' => __( 'A Highlight Widget', 'text_domain' ), ) // Args
 		);
 	}
 
@@ -77,4 +77,4 @@ class Hightlights_Widget extends WP_Widget {
 } // class Hightlights_Widget
 
 // register Foo_Widget widget
-add_action( 'widgets_init', create_function( '', 'register_widget( "Hightlights_Widget" );' ) );
+add_action( 'widgets_init', create_function( '', 'register_widget( "Highlights_Widget" );' ) );
