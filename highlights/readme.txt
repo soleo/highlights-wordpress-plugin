@@ -43,7 +43,7 @@ It is in plugins/highlights/assets/style.css .
 1. ReadyMadeWeb Highlights widget in sidebar
 2. On top of the post content
 3. Plugin Settings
-4. Wiget Settings
+4. Widget Settings
 
 == Changelog ==
 
