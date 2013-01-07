@@ -2,7 +2,7 @@
 /**
  * Adds Hightlights_Widget widget.
  */
-class Hightlights_Widget extends WP_Widget {
+class Highlights_Widget extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
@@ -24,6 +24,9 @@ class Hightlights_Widget extends WP_Widget {
 	 * @param array $instance Saved values from database.
 	 */
 	public function widget( $args, $instance ) {
+		if( !xj_has_highlights() ){
+    		return ;
+		}
 		extract( $args );
 		$title = apply_filters( 'widget_title', $instance['title'] );
 

@@ -129,7 +129,7 @@ function xj_highlights_init(){
 
 // Add menu page
 function xj_highlights_add_options_page() {
-	add_options_page('Plugin Highlights Options Page', 'Highlights Settings', 'manage_options', __FILE__, 'xj_highlights_render_form');
+	add_options_page('Plugin Highlights Options Page', 'ReadyMadeWeb Highlights Settings', 'manage_options', __FILE__, 'xj_highlights_render_form');
 }
 
 // ------------------------------------------------------------------------------
@@ -147,7 +147,7 @@ function xj_highlights_render_form() {
 		
 		<!-- Display Plugin Icon, Header, and Description -->
 		<div class="icon32" id="icon-options-general"><br></div>
-		<h2>Plugin Highlights Settings</h2>
+		<h2>Plugin ReadyMadeWeb Highlights Settings</h2>
 		<p>This page shows a global setting for plugin Highlights.</p>
 
 		<!-- Beginning of the Plugin Options Form -->

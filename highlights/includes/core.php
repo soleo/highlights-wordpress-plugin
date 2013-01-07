@@ -95,6 +95,19 @@ function xj_get_highlights(){
     $html .= "</div>";
     return $html;
 }
+
+function xj_has_highlights(){
+    $highlight1 = get_post_meta( get_the_ID(), 'highlight-1');
+    $highlight2 = get_post_meta( get_the_ID(), 'highlight-2');
+    $highlight3 = get_post_meta( get_the_ID(), 'highlight-3');
+    
+    if(!empty($highlight1) || !empty($highlight2) || !empty($highlight3)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 function xj_add_post_content($content) {
 	if(!is_feed() && !is_home()) {
 	   $options = get_option('xj_highlights_options');

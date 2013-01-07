@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Highlights
+Plugin Name: ReadyMadeWeb Highlights
 Plugin URI: http://dev.shaosidea.com/highlights-plugin
-Description: Description: Adds a highlights box with social plugin to your theme, and lets you highlight your posts
-Author: Soleo Shao
-Author URI: http://shaosidea.com/
+Description: Description: Adds a highlights box with social plugin to your theme, and lets you show highlights in your posts
+Author: ReadyMadeWeb
+Author URI: http://www.ReadyMadeWeb.com
 Version: 1.0
 
 
@@ -41,13 +41,6 @@ include_once("includes/metabox.class.php");
 				'type' 	=> 'wpeditor',
 				
 			),
-			/*
-array(
-			   'name'  => "Show on top of the post content",
-			   'id'    => 'postop',
-			   'type'  => 'radio',
-			 ),
-*/
 		)
 	)); 
 function xj_highlights_load(){
